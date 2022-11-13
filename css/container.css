@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.container {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container__paragraph {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 45px;
+    color: rgb(21, 41, 156);
+}
+
+.bodyBackground {
+    background-color: rgb(218, 247, 253);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor</title>
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="bodyBackground">
+    <div class="container">
+        <p class="container__paragraph">Kantor</p>
+        <form class="form js-formElement">
+            <p class="form__note">* Pola obowiązkowe oznaczone sa gwiazdką &#128512;</p>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Waluta: *</legend>
+                <label class="form__label">
+                    EUR: <input name="currency" type="radio" class="js-eurValueElement" required>
+                    Kurs: 4,75
+                </label>
+                <label class="form__label">
+                    USD: <input name="currency" type="radio" class="js-usdValueElement">
+                    Kurs: 4,74
+                </label>
+                <label class="form__label">
+                    GBP: <input name="currency" type="radio" class="js-gbpValueElement">
+                    Kurs: 5,48
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wartość w wybranej walucie: *</legend>
+                <p>
+                    <label>
+                        <input type="number" name="currencyValue" step="0.01" min="0.01" placeholder="np. 1,57" required
+                            class="form__input js-currencyAmountElement">
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wartość w PLN: </legend>
+                <p>
+                    Masz w przeliczeniu: <strong class="js-plnValueElement">-</strong> PLN
+                </p>
+            </fieldset>
+            <div class="form__buttonCenter">
+                <button class="form__button">Oblicz</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

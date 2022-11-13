@@ -1,0 +1,59 @@
+.form__note {
+    margin: 70px 15px 15px 15px;
+}
+
+.form__currencyLabel {
+    width: 200px;
+    border: 1px solid rgb(21, 41, 156);
+}
+
+.form__label{
+    margin: 10px;
+}
+
+.form__fieldset {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid rgb(21, 41, 156);
+    border-radius: 5px;
+}
+
+.form__buttonCenter {
+    text-align: center;
+}
+
+.form__button {
+    padding: 15px 30px;
+    border: 3px solid rgb(21, 41, 156);
+    background-color: rgb(21, 41, 156);
+    color: rgb(218, 247, 253);
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    border: 3px solid rgb(21, 41, 156);
+    background-color: rgb(142, 229, 255);
+    color: rgb(21, 41, 156);
+}
+
+.form__button:active {
+    border: 3px solid rgba(21, 41, 156, 0.521);
+    background-color: rgb(142, 229, 255);
+    color: rgb(21, 41, 156, 0.521);
+}
+
+.form__legend {
+    font-style: bold;
+    font-size: 20px;
+    color: rgb(21, 41, 156);
+    padding: 5px;
+}
+
+.form__input {
+    background-color: rgba(218, 247, 253);
+    padding: 5px;
+    width: 50%;
+    max-width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(104, 104, 104);
+}
