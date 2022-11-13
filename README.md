@@ -13,7 +13,7 @@ Let's say you have **6,26 EUR** and you want to know how much is it in **PLN**.
 3. Click '**Oblicz**' button 
 4. See the result - in polish currency you have **29,73** PLN
 
-![Kantor](https://github.com/Strojny/currency-converter/blob/9243468c1e9594769cf1fe0a9d689483cdb8c1ea/images/Kantor.png)
+![Kantor](https://raw.githubusercontent.com/Strojny/currency-converter/9243468c1e9594769cf1fe0a9d689483cdb8c1ea/images/Kantor.png)
 
 ## Try it yourself :)
 
