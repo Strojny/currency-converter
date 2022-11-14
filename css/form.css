@@ -8,7 +8,8 @@
 }
 
 .form__label{
-    margin: 10px;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .form__fieldset {
