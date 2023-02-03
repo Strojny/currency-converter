@@ -1,8 +1,7 @@
 {
-    const calculateResult = (currencyAmount) => {
+    const calculateResult = () => {
         const eurValue = document.querySelector(".js-eurValueElement");
         const usdValue = document.querySelector(".js-usdValueElement");
-        /* name of below constant (currencyAmount) should be different than function parameter?? */
         const currencyAmount = document.querySelector(".js-currencyAmountElement");
 
         if (eurValue.checked === true) {
@@ -14,14 +13,24 @@
         };
     };
 
-    const form = document.querySelector(".js-formElement");
+    const endResult = () => {
+        const plnValue = document.querySelector(".js-plnValueElement");
+        const result = calculateResult();
 
-    form.addEventListener("submit", (event) => {
+        plnValue.innerText = result.toFixed(2);
+    }
+
+    const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const plnValue = document.querySelector(".js-plnValueElement");
-        const result = calculateResult(currencyAmount);
-        plnValue.innerText = result.toFixed(2);
+        endResult();
+    };
 
-    });
+    const init = () => {
+        const form = document.querySelector(".js-formElement");
+
+        form.addEventListener("submit", onFormSubmit);
+    }
+
+    init();
 }
