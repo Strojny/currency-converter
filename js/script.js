@@ -13,17 +13,17 @@
         };
     };
 
-    const endResult = () => {
+    const setResultText = (result) => {
         const plnValue = document.querySelector(".js-plnValueElement");
-        const result = calculateResult();
 
         plnValue.innerText = result.toFixed(2);
     }
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        const result = calculateResult();
 
-        endResult();
+        setResultText(result);
     };
 
     const init = () => {
